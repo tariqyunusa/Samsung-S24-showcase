@@ -15,7 +15,8 @@ export default {
         secondary: "samsungSharpSans-Bold-700",
       },
       height : {
-        18: "4.44rem"
+        18: "4.44rem",
+        hero: "90.792vh"
       }
     },
   },
