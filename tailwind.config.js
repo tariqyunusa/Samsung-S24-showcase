@@ -13,8 +13,9 @@ export default {
         primary400: "samsungOne-400",
         primary700: "samsungOne-700",
         secondary: "samsungSharpSans-Bold-700",
-        
-
+      },
+      height : {
+        18: "4.44rem"
       }
     },
   },
