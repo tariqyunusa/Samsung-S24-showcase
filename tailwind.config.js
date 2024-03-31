@@ -16,7 +16,13 @@ export default {
       },
       height : {
         18: "4.44rem",
-        hero: "90.792vh"
+        hero: "90.792vh",
+        100: "200vh",
+        img1: "25vh"
+      },
+      width: {
+        100: "404px",
+        img1: "25vw"
       }
     },
   },

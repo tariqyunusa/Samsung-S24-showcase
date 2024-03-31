@@ -46,8 +46,8 @@ const Hero = () => {
     const centeredText = ["Sleek.", "Strong.", "Stunning."]
 
     return (
-        <div className='h-hero w-screen flex justify-center items-center'>
-            <video src={heroVid} ref={videoRef} className='object-cover w-full h-full' loop playsInline muted></video>
+        <div className='h-hero w-screen flex justify-center items-center overflow-hidden'>
+            <video src={heroVid} ref={videoRef} className='object-cover w-full h-full overflow-x-hidden' loop playsInline muted></video>
             <div className='flex absolute text-white gap-4 '>
               {centeredText.map((item, index) => (
                 <h1 className='secondary-font text-6xl stagger  opacity-0 ' key={index}>{item}</h1>

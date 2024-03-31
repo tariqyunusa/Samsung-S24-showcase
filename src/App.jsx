@@ -4,17 +4,21 @@ import './App.css'
 import SecondaryNav from './components/SecondaryNav'
 import PrimaryNav from './components/PrimaryNav'
 import Hero from './components/Hero'
+import Display from './components/Display'
+import Camera from './components/Camera'
 
 function App() {
 
   
 
   return (
-    <div className='overflow-x-hidden'>
+    <div className=' relative'>
     <SecondaryNav />
     <PrimaryNav />
     <Hero />
-   <div className='h-screen w-screen'></div>
+   <Display />
+   <Camera />
+   <div className='w-screen h-screen'></div>
     </div>
   )
 }
