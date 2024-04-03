@@ -84,6 +84,12 @@ body{
     width: 25vw;
     height: 25vh;
 }
+.section-left{
+    left: -100%;
+}
+.section-right{
+    right: -100%;
+}
 
 *{
     margin: 0;

@@ -24,6 +24,7 @@ function App() {
    <div className='h-screen w-screen reset-style'>
     <Colors />
    </div>
+   <div className='h-screen w-screen'></div>
     </div>
   )
 }
