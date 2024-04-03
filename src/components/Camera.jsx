@@ -9,6 +9,7 @@ import img6 from "../assets/image6.jpg"
 import { useScroll, useTransform, motion } from 'framer-motion'
 
 
+
 const Camera = () => {
 
     const container = useRef(null)
@@ -29,55 +30,55 @@ const Camera = () => {
         scale: scale4,
         width: "25vw",
         height: "25vh",
-        top:"-50px",
-        left: 0,
+        top:"-10px",
+        left: "-20px",
 
     },
     {
         src: img2,
-        scale: scale4,
+        scale: scale5,
         width: "11.53vw",
         height: "40vh",
-        top: "10px",
-        left: "-300px",
+        top: "50px",
+        left: "-330px",
     },
     {
         src: img3,
-        scale: scale4,
+        scale: scale6,
         width: "12vw",
         height: "29.6vh",
-        top: "180px",
+        top: "220px",
         left: "290px",
     },
     {
         src: img4,
-        scale: scale4,
+        scale: scale7,
         width: "12vw",
         height: "25vh",
-        top: "-50px",
-        left: "305px",
+        top: "-10px",
+        left: "290px",
     },
     {
         src: img5,
-        scale: scale4,
+        scale: scale8,
         width: "38.5vw",
         height: "21.5vh",
-        top: "-240px",
+        top: "-200px",
         left: "0px",
     },
     {
         src: img6,
-        scale: scale4,
-        width: "22.8vw",
+        scale: scale5,
+        width: "22vw",
         height: "29vh",
-        top: "170px",
+        top: "210px",
         left: "0px",
     },
 ]
 
 
   return (
-    <section ref={container} className='w-screen h-100 px-12 relative'>
+    <section ref={container} className='w-screen h-100 px-12 relative '>
         <div className='flex justify-between '>
             <h2 className='secondary-font text-5xl'>From 0.6x to 10x</h2>
             <div className='w-100'>
@@ -89,7 +90,7 @@ const Camera = () => {
            
         </div>
        
-        <div className='sticky top-0 h-screen w-screen '>
+        <div className='sticky top-0 h-screen w-screen overflow-hidden '>
             {images.map(({src, scale, top, left, width, height}, index) => (
                  <motion.div key={index}  className='w-full h-full absolute top-0 flex justify-center items-center' style={{ scale: scale}}>
                  <div  style={{ width: width, height: height, left: left, top: top} } className=' relative ' >
@@ -99,6 +100,7 @@ const Camera = () => {
             ))}
            
         </div>
+        
         
     </section>
   )

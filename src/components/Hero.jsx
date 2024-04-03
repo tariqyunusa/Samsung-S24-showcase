@@ -50,7 +50,7 @@ const Hero = () => {
             <video src={heroVid} ref={videoRef} className='object-cover w-full h-full overflow-x-hidden' loop playsInline muted></video>
             <div className='flex absolute text-white gap-4 '>
               {centeredText.map((item, index) => (
-                <h1 className='secondary-font text-6xl stagger  opacity-0 ' key={index}>{item}</h1>
+                <h1 className='secondary-font text-6xl stagger smaller-font opacity-0 ' key={index}>{item}</h1>
               ))}
             </div>
         </div>
