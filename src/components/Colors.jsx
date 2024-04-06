@@ -11,34 +11,39 @@ const Colors = () => {
 
         tl.to('.section-left', {left: 0})
         .to('.section-right', {right: 0})
+        .to('.hide-text', {
+            opacity: 1,
+            top: '300px'
+         })
         ScrollTrigger.create({
             trigger: ".parent-container",
             start: "top top",
             end: "200px",
-            markers: true,
+            // markers: true,
             pin: true,
             animation: tl,
             scrub: 1,
             anticipatePin: true,
             pinSpacer: false
         })
+        
         return() => {
             tl.kill()
         }
     },[])
    
   return (
-    <div className='w-screen h-screen relative parent-container'>
+    <div className='w-screen h-screen relative parent-container overflow-hidden'>
         <div className='w-full h-full flex justify-center items-center absolute top-0'>
-            <h1 className='absolute secondary-font text-white text-4xl'>Colors inspired by nature</h1>
+            <h1 className='absolute secondary-font text-white text-4xl hide-text'>Colors inspired by nature</h1>
             <img src={stoney} alt="stoney" className='object-cover' />
         </div>
         <div className='w-full h-full flex justify-center items-center absolute top-0 section-left '>
-            <h1 className='absolute secondary-font text-white text-4xl'>Colors inspired by the environment</h1>
+            <h1 className='absolute secondary-font text-white text-4xl hide-text'>Colors inspired by the environment</h1>
             <img src={duney} alt="stoney" className='object-cover' />
         </div>
         <div className='w-full h-full flex justify-center items-center absolute top-0 section-right'>
-            <h1 className='absolute secondary-font text-white text-4xl'>Beauty in your fingertips</h1>
+            <h1 className='absolute secondary-font text-white text-4xl hide-text '>Beauty at your fingertips</h1>
             <img src={flowery} alt="stoney" className='object-cover' />
         </div>
     </div>
