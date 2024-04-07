@@ -8,7 +8,6 @@ import Camera from './components/Camera'
 import Colors from './components/Colors'
 import Carousel from './components/Carousel'
 
-
 function App() {
 
   
@@ -24,7 +23,10 @@ function App() {
    <div className='h-screen w-screen reset-style'>
     <Colors />
    </div>
+   <div className='h-screen w-screen relative top-48'>
    <Carousel />
+   </div>
+  
     </div>
   )
 }

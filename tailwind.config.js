@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        primary : "#006BEA"
+        primary : "#006BEA",
+        grey: "#0A0A0A"
       },
       fontFamily : {
         primary400: "samsungOne-400",
@@ -18,11 +19,13 @@ export default {
         18: "4.44rem",
         hero: "90.792vh",
         100: "200vh",
-        img1: "25vh"
+        img1: "25vh",
+        carouselHeight: "80vh"
       },
       width: {
         100: "404px",
-        img1: "25vw"
+        img1: "25vw",
+        carouselWidth: "80vw"
       }
     },
   },
