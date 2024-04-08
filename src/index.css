@@ -108,7 +108,9 @@ body{
 .section-right{
     right: -100%;
 }
-
+.active{
+    width: 50%;
+}
 
 *{
     margin: 0;
