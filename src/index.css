@@ -108,10 +108,21 @@ body{
 .section-right{
     right: -100%;
 }
-.active{
-    width: 50%;
-}
+.indicator{
+    width: 10px ;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
 
+}
+.indicator_active{
+    width: 50%;
+    height: 10px;
+    background-color: grey;
+    border-radius: 50px;
+    cursor: pointer;
+}
 *{
     margin: 0;
     padding: 0;
