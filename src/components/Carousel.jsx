@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { sliderAssets } from '../utils';
 import vid1 from '../assets/video1.webm';
 import vid2 from '../assets/video2.mp4';
@@ -9,6 +9,14 @@ const videos = [vid1, vid2, vid3];
 const Carousel = () => {
   const [active, setActive] = useState(0);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActive((pre) => (pre === videos.length - 1 ? 0 : pre + 1))
+      console.log("timer index", active);
+    }, 5000)
+    return () => clearInterval(timer)
+  },[active])
+
   const handleNext = () => {
     setActive((prevActive) => (prevActive === videos.length - 1 ? 0 : prevActive + 1));
   };
@@ -16,23 +24,24 @@ const Carousel = () => {
   const handlePrev = () => {
     setActive((prevActive) => (prevActive === 0 ? videos.length - 1 : prevActive - 1));
   };
+  console.log("normal active index", active);
 
   return (
     <section className='h-screen w-screen flex bg-grey absolute top-0 justify-center items-center overflow-x-auto px-12 gap-12'>
       {sliderAssets.map(({ title, paragraph }, index) => (
-        <div key={index} className={`rounded-md w-carouselWidth h-carouselHeight bg-black gap-8 p-4 flex ${active === index ? '' : 'hidden'}`}>
-          <div className=''>
+        <div key={index} onLoad={() => timer} className={`rounded-md w-carouselWidth h-carouselHeight  bg-black gap-8  p-4 flex ${active === index ? '' : 'hidden'}`}>
+          <div className='img-none'>
             <video src={videos[index]} loop muted playsInline autoPlay className='object-cover'></video>
           </div>
-          <div className='flex flex-col gap-8 w-2/3'>
-            <h1 className='secondary-font text-4xl text-white'>{title}</h1>
+          <div className='flex flex-col gap-8 w-2/3 comp-w'>
+            <h1 className='secondary-font text-4xl text-white md:text-2xl '>{title}</h1>
             <p className='text-white primary-font-light'>{paragraph}</p>
             <button className='rounded-full p-3 text-white bg-black secondary-font border-2 self-start border-white'>Explore more</button>
           </div>
         </div>
       ))}
 
-      <div className='bg-black w-[10vw] rounded-full absolute p-1 gap-4 top-[90vh] flex left-[50%] my-8'>
+      <div className='bg-black w-[10vw] indicator-container rounded-full absolute p-1 gap-4 top-[90vh] flex  my-8'>
         {sliderAssets.map((_, index) => (
           <div className={active === index ? 'indicator_active' : 'indicator indicator_inactive'} key={index} onClick={() => setActive(index)}></div>
         ))}

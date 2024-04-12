@@ -25,6 +25,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.pin-spacer{
+    padding: 0;
+}
 .primary-font-light {
     font-family: 'SamsungOne-400', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -68,6 +71,13 @@
         font-size: 1.3rem;
     
     }
+    .indicator-container{
+        width: 30vw;
+        /* left: 0; */
+    }
+    .comp-w{
+        width: 100%;
+    }
     .text-mobile-p{
         font-size: .85rem;
     }
@@ -86,6 +96,7 @@
     .heading-special-mobile{
         font-size: 2rem;
     }
+
 }
 /* section{
     border: 1px solid #000;

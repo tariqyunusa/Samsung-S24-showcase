@@ -22,7 +22,7 @@ const Colors = () => {
             // markers: true,
             pin: true,
             animation: tl,
-            scrub: 1,
+            scrub: 3,
             anticipatePin: true,
             pinSpacer: false
         })
@@ -34,17 +34,17 @@ const Colors = () => {
    
   return (
     <div className='w-screen h-screen relative parent-container overflow-hidden'>
-        <div className='w-full h-full flex justify-center items-center absolute top-0'>
-            <h1 className='absolute secondary-font text-white text-4xl hide-text'>Colors inspired by nature</h1>
-            <img src={stoney} alt="stoney" className='object-cover' />
+        <div className='w-screen h-screen flex justify-center items-center absolute top-0'>
+            {/* <h1 className='absolute secondary-font text-white text-4xl hide-text'>Colors inspired by nature</h1> */}
+            <img src={stoney} alt="stoney" className='object-cover h-full' />
         </div>
-        <div className='w-full h-full flex justify-center items-center absolute top-0 section-left '>
-            <h1 className='absolute secondary-font text-white text-4xl hide-text'>Colors inspired by the environment</h1>
-            <img src={duney} alt="stoney" className='object-cover' />
+        <div className='w-screen h-screen flex justify-center items-center absolute top-0 section-left '>
+            {/* <h1 className='absolute secondary-font text-white text-4xl hide-text'>Colors inspired by the environment</h1> */}
+            <img src={duney} alt="stoney" className='object-cover h-full' />
         </div>
-        <div className='w-full h-full flex justify-center items-center absolute top-0 section-right'>
-            <h1 className='absolute secondary-font text-white text-4xl hide-text '>Beauty at your fingertips</h1>
-            <img src={flowery} alt="stoney" className='object-cover' />
+        <div className='w-screen h-screen flex justify-center items-center absolute top-0 section-right'>
+            <h1 className='absolute secondary-font text-white text-4xl hide-text '>Colors inspired by nature</h1>
+            <img src={flowery} alt="stoney" className='object-cover h-full w-full' />
         </div>
     </div>
   )
