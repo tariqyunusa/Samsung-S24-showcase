@@ -12,19 +12,19 @@ const Carousel = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setActive((pre) => (pre === videos.length - 1 ? 0 : pre + 1))
-      console.log("timer index", active);
+      // console.log("timer index", active);
     }, 5000)
     return () => clearInterval(timer)
   },[active])
 
-  const handleNext = () => {
-    setActive((prevActive) => (prevActive === videos.length - 1 ? 0 : prevActive + 1));
-  };
+  // const handleNext = () => {
+  //   setActive((prevActive) => (prevActive === videos.length - 1 ? 0 : prevActive + 1));
+  // };
 
-  const handlePrev = () => {
-    setActive((prevActive) => (prevActive === 0 ? videos.length - 1 : prevActive - 1));
-  };
-  console.log("normal active index", active);
+  // const handlePrev = () => {
+  //   setActive((prevActive) => (prevActive === 0 ? videos.length - 1 : prevActive - 1));
+  // };
+  // console.log("normal active index", active);
 
   return (
     <section className='h-screen w-screen flex bg-grey absolute top-0 justify-center items-center overflow-x-auto px-12 gap-12'>

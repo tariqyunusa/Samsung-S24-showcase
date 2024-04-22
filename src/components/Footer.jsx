@@ -11,16 +11,16 @@ const Footer = () => {
         gsap.registerPlugin(ScrollTrigger)
 
         ScrollTrigger.create({
-            trigger: lastVideo,
+            trigger: footerVidRef.current,
             start: "top-=100 top",
             end: "bottom bottom",
-            // markers: true,s
+            // markers: true,
             scrub: true,
             onEnter: () => {
-                lastVideo.play()
+                footerVidRef.current.play()
             },
             onLeaveBack: () => {
-                lastVideo.pause()
+                footerVidRef.current.pause()
             }
 
         })

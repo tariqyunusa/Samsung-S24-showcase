@@ -44,8 +44,8 @@ const Camera = () => {
             scale: scale4,
             width: isMobile ? "35vw" : "25vw",
             height: isMobile ? "30vh" : "25vh",
-            top: isMobile ? "-10px" : "-20px",
-            left: isMobile ? "-15px" : "-40px",
+            top: isMobile ? "-10px" : "-10px",
+            left: isMobile ? "-15px" : "-20px",
             // center center
         },
         {
@@ -53,7 +53,7 @@ const Camera = () => {
             scale: scale5,
             width: isMobile ? "29vw" : "11.53vw",
             height: isMobile ? "20vh" : "40vh",
-            top: isMobile ? "0px" : "100px",
+            top: isMobile ? "0px" : "50px",
             left: isMobile ? "-170px" : "-330px",
             // center left
         },
@@ -71,7 +71,7 @@ const Camera = () => {
             scale: scale7,
             width: isMobile ? "30vw" : "12vw",
             height: isMobile ? "30vh" : "25vh",
-            top: isMobile ? "-10px" : "-20px",
+            top: isMobile ? "-10px" : "-10px",
             left: isMobile ? "130px" : "290px",
             // top right
         },
@@ -80,7 +80,7 @@ const Camera = () => {
             scale: scale8,
             width: isMobile ? "100vw" : "38.5vw",
             height: isMobile ? "20vh" : "21.5vh",
-            top: isMobile ? "-200px" : "-100px",
+            top: isMobile ? "-200px" : "-200px",
             left: isMobile ? "-50px" : "0px",
             // top top
         },

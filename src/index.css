@@ -110,6 +110,9 @@
         right: 34%;
         position: absolute;
     }
+    .info-display{
+        display: none;
+    }
 
 }
 /* section{

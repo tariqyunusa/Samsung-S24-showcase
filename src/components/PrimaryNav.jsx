@@ -11,7 +11,7 @@ const PrimaryNav = () => {
                     <li key={index} className='primary-font-light text-xl'>{item.name}</li>
                 ))}
             </ul>
-            <button className='rounded-md bg-primary p-3 primary-font-darker text-xl text-white'>Buy Now</button>
+            <a className='rounded-md bg-primary p-3 primary-font-darker text-xl text-white' href='https://www.samsung.com/us/smartphones/galaxy-s24-ultra/buy/'>Buy Now</a>
         </div>
    </nav>
   )
