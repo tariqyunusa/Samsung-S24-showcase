@@ -7,6 +7,8 @@ import Display from './components/Display'
 import Camera from './components/Camera'
 import Colors from './components/Colors'
 import Carousel from './components/Carousel'
+import Pixels from './components/Pixels'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -26,6 +28,12 @@ function App() {
    <div className='h-screen w-screen relative top-48'>
    <Carousel />
    </div>
+  <div className='h-screen w-screen relative  top-48'>
+    <Pixels />
+  </div>
+  <div className='h-screen w-screen relative top-48'>
+  <Footer />
+  </div>
   
     </div>
   )

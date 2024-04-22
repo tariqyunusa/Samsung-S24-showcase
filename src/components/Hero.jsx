@@ -37,7 +37,7 @@ const Hero = () => {
             },
             y: -100,
             opacity: 1,
-            stagger: 1
+            stagger: 1.5
         })
 
        

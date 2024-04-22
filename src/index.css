@@ -43,6 +43,7 @@
     position: relative;
     top: 100px;
 }
+
 @media screen and (max-width: 640px) {
     .primary-nav{
         display: none;
@@ -96,6 +97,19 @@
     .heading-special-mobile{
         font-size: 2rem;
     }
+    .header__p{
+        font-size: 1rem;
+    }
+    .pixels__section_header{
+        font-size: 2rem;
+    }
+    .header__h1{
+        font-size: 2rem;
+    }
+    .first_cam{
+        right: 34%;
+        position: absolute;
+    }
 
 }
 /* section{
@@ -133,6 +147,96 @@ body{
     background-color: grey;
     border-radius: 50px;
     cursor: pointer;
+}
+.first-hr__container{
+    right: 15rem;
+    top: 1rem;
+    position: absolute;
+    width: 15vw;
+    height: 30vh;
+    display: flex;
+    align-items: end;
+}
+.first-hr{
+transform: rotate(90deg);
+border: 1px solid #fff;
+width: 8rem;
+}
+.second-hr{
+    transform: rotate(90deg);
+    border: 1px solid #fff;
+    width: 5rem;
+}
+.third-hr{
+    transform: rotate(90deg);
+    border: 1px solid #fff;
+    width: 5rem;
+}
+.fourth-hr{
+    transform: rotate(90deg);
+    border: 1px solid #fff;
+    width: 5rem;
+}
+.fifth-hr{
+    transform: rotate(90deg);
+    border: 1px solid #fff;
+    width: 12rem;
+}
+.first_cam{
+    right: 45%;
+    top: -10.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+   
+}
+.second_cam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 48%;
+    gap: 3rem;
+}
+.third_cam{
+    display: flex;
+    flex-direction: column;
+    top: 44%;
+    right: 65%;
+    align-items: center;
+    gap: 3rem;
+    transform: rotate(62deg);
+}
+.fourth_cam{
+    display: flex;
+    flex-direction: column;
+    top: 55%;
+    right: 44%;
+    align-items: center;
+    gap: 3rem;
+}
+.fifth_cam{
+    display: flex;
+    flex-direction: column;
+    top: 18%;
+    right: 27.5%;
+    align-items: center;
+    gap: 7rem;
+}
+.overview-bg{
+    /* background-image: url(../src/assets/camera-overview.jpg); */
+    /* object-fit: cover; */
+    width: 100vw;
+    min-height: 100vh;
+}
+.background__overview_img{
+    background-image: url(../src/assets/camera-overview.jpg);
+    object-fit: cover; 
+}
+.text-container_overview{
+    width: 100vw;
+
 }
 *{
     margin: 0;

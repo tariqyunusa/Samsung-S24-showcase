@@ -26,7 +26,11 @@ export default {
         100: "404px",
         img1: "25vw",
         carouselWidth: "80vw"
+      },
+      textColor: {
+        primary : "#006BEA",
       }
+
     },
   },
   plugins: [],
